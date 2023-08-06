@@ -1,0 +1,28 @@
+.header {
+  &__menu-belt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+  }
+}
+
+.header-menu {
+  &__items {
+    display: flex;
+  }
+
+  &__link {
+    color: var(--main-light-color);
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+
+    &:hover {
+      color: var(--brend-light-color);
+    }
+  }
+}
