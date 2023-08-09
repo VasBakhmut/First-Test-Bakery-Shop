@@ -3,9 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 34px;
   }
 
-  &__nav {
+  &__menu {
+    display: flex;
+    gap: 64px;
+    align-items: center;
   }
 }
 
@@ -17,12 +21,14 @@
   &__link {
     color: var(--main-light-color);
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
 
     &:hover {
       color: var(--brend-light-color);
+      transform: scale(1.2);
+      transition-duration: 0.3s;
     }
   }
 }
