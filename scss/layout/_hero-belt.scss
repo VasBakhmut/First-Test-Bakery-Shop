@@ -1,4 +1,11 @@
 .hero-belt {
   color: var(--main-light-color);
   background-color: var(--brend-light-color);
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    padding: 16px 0;
+  }
 }

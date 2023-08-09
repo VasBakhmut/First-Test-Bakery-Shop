@@ -1,15 +1,29 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 34px;
+  width: 100%;
+
   &__menu-belt {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 34px;
+    gap: 18px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-grow: 1;
   }
 
   &__menu {
     display: flex;
     gap: 64px;
+    justify-content: center;
     align-items: center;
+    flex-grow: 1;
   }
 }
 
