@@ -1,0 +1,33 @@
+.chefs {
+  padding: 48px 0 48px 0;
+
+  &__items-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.chefs-card {
+  display: flex;
+  gap: 30px;
+  margin-right: 12px;
+
+  &__text-container {
+    width: 100%;
+    max-width: 336px;
+  }
+
+  &__h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--main-dark-color);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__image {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--main-light-color), -16px 16px 0 2px #a18268;
+  }
+}

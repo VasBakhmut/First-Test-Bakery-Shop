@@ -4,43 +4,32 @@
   font-size: 128px;
   line-height: 1.5;
   text-align: center;
-  margin: 0;
+  padding: 272px 0;
 }
 
 .brend-color-text {
   color: var(--brend-light-color);
 }
 
-.h2-sec2 {
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 1.3;
+.brend-dark-color-text {
+  color: var(--brend-dark-color);
 }
 
-.strong {
+.brend-strong-text-upcase {
   color: var(--brend-light-color);
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.strong1 {
+.brend-strong-text {
   color: var(--brend-light-color);
   font-weight: 600;
 }
 
-.about-paragraphs {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.h2-sec3-4 {
+.h2-chefs-formats-sections {
   font-weight: 900;
   font-size: 64px;
   line-height: 1.3;
   text-align: center;
-}
-
-.h2strong {
-  color: var(--brend-dark-color);
+  margin-bottom: 80px;
 }

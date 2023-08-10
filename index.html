@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
     <link rel="stylesheet" href="CSS/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header" id="section-home">
@@ -43,78 +47,136 @@
         <div class="container">
           <h2 class="visually-hidden">Чому саме ми</h2>
           <ul class="hero-belt__items">
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class="hero-belt__text">Великий попит на ринку</li>
+            <li class="hero-belt__text">Доступні за бюджетом формати</li>
+            <li class="hero-belt__text">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
       <section class="about" id="about">
         <div class="container">
-          <h2 class="about__h2">
-            Новий формат<br />
-            традицій
-          </h2>
-          <p class="about-paragraphs">
-            <span class="strong">shop bakery</span> — це пекарня, яка взяла все найкраще, і
-            зберегла смак<br />
-            традиційної випічки та натуральність інгредієнтів.
-          </p>
-          <p class="about-paragraphs">
-            Ми працюємо як найвідоміші мережі—<br />
-            <span class="strong1">5 хвилин і замовлення готове. </span><br />
-            А ще у наших пекарень стильний дизайн<br />
-            та висока якість обслуговування!
-          </p>
-          <img src="/images/baker-man.jpg" alt="baker-man" />
+          <div class="about__items-container">
+            <div class="about__text-container">
+              <h2 class="about__h2">Новий формат традицій</h2>
+              <p class="about__text">
+                <span class="brend-strong-text-upcase">shop bakery</span> — це пекарня, яка
+                взяла все найкраще, і зберегла смак<br />
+                традиційної випічки та натуральність інгредієнтів.
+              </p>
+              <p class="about__text">
+                Ми працюємо як найвідоміші мережі—<br />
+                <span class="brend-strong-text">5 хвилин і замовлення готове. </span><br />
+                А ще у наших пекарень стильний дизайн<br />
+                та висока якість обслуговування!
+              </p>
+            </div>
+            <img class="about__photo" src="/images/baker-man.jpg" alt="baker-man" />
+          </div>
         </div>
       </section>
-      <section id="section-2">
-        <h2 class="h2-sec3-4">
-          Наші найкращі<br />
-          <span class="h2strong">шеф -кухарі</span>
-        </h2>
-        <article>
-          <img src="/images/nastya-chef.jpg" alt="nastya-chef" />
-          <h3>Настя</h3>
-          <p>
-            Привіт, я Настя! Вже 10 років, я свтілюю у життя цікаві та смачні ідеї. Я випічу
-            для вас найсмачніщі вироби!
-          </p>
-        </article>
-        <article>
-          <img src="/images/vlad-chef.jpg" alt="vlad-chef" />
-          <h3>Влад</h3>
-          <p>
-            Привіт, я Влад! Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
-            з якою ми ділимось кожен раз з Вами через нашу випічку! Я зроблю для вас
-            унікальну начинку на будь який смак!
-          </p>
-        </article>
+      <section class="chefs" id="chefs">
+        <div class="container">
+          <h2 class="h2-chefs-formats-sections">
+            Наші найкращі<br />
+            <span class="brend-dark-color-text">шеф -кухарі</span>
+          </h2>
+          <div class="chefs__items-container">
+            <article class="chefs-card">
+              <img
+                class="chefs-card__image"
+                src="/images/nastya-chef.jpg"
+                alt="nastya-chef"
+              />
+              <div class="chefs-card__text-container">
+                <h3 class="chefs-card__h3">Настя</h3>
+                <p>
+                  Привіт, я Настя!<br /><br />
+                  Вже 10 років, я свтворюю <br />
+                  у життя цікаві та смачні ідеї.<br /><br />
+                  Я випічу для вас <br />
+                  найсмачніщі вироби!
+                </p>
+              </div>
+            </article>
+            <article class="chefs-card">
+              <img class="chefs-card__image" src="/images/vlad-chef.jpg" alt="vlad-chef" />
+              <div class="chefs-card__text-container">
+                <h3 class="chefs-card__h3">Влад</h3>
+                <p>
+                  Привіт, я Влад!<br /><br />
+                  Мій кодитерський стаж вже 18 років. <br />SHOP BEKERY - це наша любов, з
+                  <br />
+                  якою ми ділимось кожен раз з Вами через нашу випічку!<br /><br />
+                  Я зроблю для вас унікальну начинку <br />
+                  на будь який смак!
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
-      <section id="section-3">
-        <h2 class="h2-sec3-4">Формати</h2>
-        <article>
-          <h3 lang="en">Walrus</h3>
-          <p>
-            Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2 пекарі, 2
-            помічники пекаря, 2 офіціанти-різнороби Посадкові місця: є
-          </p>
-        </article>
-        <article>
-          <h3 lang="en">Horseshoe</h3>
-          <p>
-            Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2 продавці-касири, 2
-            пекарі, 1 помічник пекаря Посадкові місця: відсутні
-          </p>
-        </article>
-        <article>
-          <h3 lang="en">Handlebar</h3>
-          <p>
-            Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1 продавець, 1 пекар, 1
-            помічник пекаря Посадкові місця: відсутні
-          </p>
-        </article>
+      <section class="formats" id="formats">
+        <div class="container">
+          <h2 class="h2-chefs-formats-sections">Формати</h2>
+          <ul class="foramts__items-container">
+            <li class="formats-card">
+              <article class="formats-card__container">
+                <div class="formats-card__text-container">
+                  <h3 class="formats-card__h3" lang="en">Walrus</h3>
+                  <p class="formats-card__text">
+                    Площа: до 120 м2 <br />
+                    Меню: розширене меню <br />
+                    Штат: 2 продавці-касири, 2 пекарі, 2 <br />
+                    помічники пекаря, 2 офіціанти-різнороби <br />Посадкові місця: є
+                  </p>
+                </div>
+                <img
+                  class="formats-card__image"
+                  src="./images/formats-card1.jpg"
+                  alt="formats-card"
+                />
+              </article>
+            </li>
+            <li class="formats-card">
+              <article class="formats-card__container">
+                <div class="formats-card__text-container">
+                  <h3 class="formats-card__h3" lang="en">Horseshoe</h3>
+                  <p class="formats-card__text">
+                    Площа: до 25 м2<br />
+                    Меню: найпопулярніші позиції меню<br />
+                    Штат: 2 продавці-касири, 2 пекарі, 1<br />
+                    помічник пекаря<br />
+                    Посадкові місця: відсутні
+                  </p>
+                </div>
+                <img
+                  class="formats-card__image"
+                  src="./images/formats-card2.jpg"
+                  alt="formats-card"
+                />
+              </article>
+            </li>
+            <li class="formats-card">
+              <article class="formats-card__container">
+                <div class="formats-card__text-container">
+                  <h3 class="formats-card__h3" lang="en">Handlebar</h3>
+                  <p class="formats-card__text">
+                    Площа: до 15 м2<br />
+                    Меню: найпопулярніші позиції меню<br />
+                    Штат: 1 продавець, 1 пекар, 1 помічник<br />
+                    пекаря<br />
+                    Посадкові місця: відсутні
+                  </p>
+                </div>
+                <img
+                  class="formats-card__image"
+                  src="./images/formats-card3.jpg"
+                  alt="formats-card"
+                />
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="section-4">
         <h2>Приєднуйся до мережі пекарень</h2>
