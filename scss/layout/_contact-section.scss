@@ -1,0 +1,34 @@
+.contact {
+  padding: 48px 0 96px 0;
+
+  &__items-container {
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+  }
+
+  &__google-map {
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+  }
+
+  &__h2 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: var(--brend-light-color);
+    margin-bottom: 42px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+}

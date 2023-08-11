@@ -118,7 +118,12 @@
       <section class="formats" id="formats">
         <div class="container">
           <h2 class="h2-chefs-formats-sections">Формати</h2>
-          <ul class="foramts__items-container">
+          <ul class="formats__items-container">
+            <button class="button-arrow" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/sprite.svg#icon-Arrow"></use>
+              </svg>
+            </button>
             <li class="formats-card">
               <article class="formats-card__container">
                 <div class="formats-card__text-container">
@@ -175,47 +180,118 @@
                 />
               </article>
             </li>
+            <button class="button-arrow next" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/sprite.svg#icon-Arrow"></use>
+              </svg>
+            </button>
           </ul>
+          <span>pagination</span>
         </div>
       </section>
-      <section id="section-4">
-        <h2>Приєднуйся до мережі пекарень</h2>
-        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-        <button type="button">Замовити дзвінок</button>
-        <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17093.4189553716!2d30.59216485334249!3d50.44199602891788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c55adf55459d%3A0xa9177ad8af800b79!2zTWNEb25hbGTigJlz!5e0!3m2!1sru!2sau!4v1687569497540!5m2!1sru!2sau"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__items-container">
+            <div class="contact__form-items">
+              <h2 class="contact__h2">Приєднуйся до мережі пекарень</h2>
+              <p class="contact__text">Заповни форму, щоб ми звʼязались з тобою!</p>
+              <form name="contact-form" autocomplete="off">
+                <div class="contact__form-field input">
+                  <label class="input__label visually-hidden" for="user-name"> Імʼя </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Імʼя"
+                    required
+                  />
+                </div>
+                <div class="contact__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">
+                    Телефон
+                  </label>
+                  <input
+                    class="input__control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+                <div class="contact__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Електронна пошта
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="button-contact" type="submit">Замовити дзвінок</button>
+                <p class="terms-text">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="terms-text" href="#">політикою конфіденційності</a>
+                </p>
+              </form>
+            </div>
+            <iframe
+              class="contact__google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17093.4189553716!2d30.59216485334249!3d50.44199602891788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c55adf55459d%3A0xa9177ad8af800b79!2zTWNEb25hbGTigJlz!5e0!3m2!1sru!2sau!4v1687569497540!5m2!1sru!2sau"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="#section-home"> <img src="/images/logo.svg" alt="Logo bakery shop" /></a>
-      <nav>
-        <ul>
-          <li><a href="#section-1">Наші традиції</a></li>
-          <li><a href="#section-2">Шеф-кухарі</a></li>
-          <li><a href="#section-3">Формати</a></li>
-          <li><a href="#section-4">Котакти</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-          <li>><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-          <li>
-            <a href="https://goo.gl/maps/mQocXiT9gizjxSEV7" target="_blank"
-              >Україна, м. Київ, вул. Січових Стрільців 54</a
-            >
-          </li>
-          <li><facebook-insta></facebook-insta>facebook - insta</li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__items-container">
+          <a href="./index.html"> <img src="/images/logo.svg" alt="Logo bakery shop" /></a>
+          <nav>
+            <ul>
+              <li><a class="footer__link" href="#section-1">Франшиза</a></li>
+              <li><a class="footer__link" href="#section-2">Шеф-кухарі</a></li>
+              <li><a class="footer__link" href="#section-3">Формати</a></li>
+              <li><a class="footer__link" href="#section-4">Котакти</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul>
+              <li>
+                <a class="footer__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+              </li>
+              <li>
+                <a class="footer__link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="https://goo.gl/maps/mQocXiT9gizjxSEV7"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
+              </li>
+              <div>facebook</div>
+            </ul>
+          </address>
+          <div>
+            <a class="footer__link" href="#">Політика конфіденційності</a>
+            <p class="copyright-text">&copy; 2023 Дані захищені</p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
