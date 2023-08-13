@@ -33,7 +33,9 @@
               </li>
             </ul>
           </nav>
-          <button class="button-header" type="button">Замовити дзвінок</button>
+          <button class="button-header modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -118,70 +120,128 @@
       <section class="formats" id="formats">
         <div class="container">
           <h2 class="h2-chefs-formats-sections">Формати</h2>
-          <div class="formats__items-container swiper-container">
+          <div class="formats__items-container">
             <button class="button-arrow carousel-button prev" type="button">
               <svg width="16px" height="16px">
                 <use href="./images/sprite.svg#icon-Arrow"></use>
               </svg>
             </button>
-            <ul class="swiper-wrapper">
-              <li class="formats-card swiper-slide">
-                <article class="formats-card__container">
-                  <div class="formats-card__text-container">
-                    <h3 class="formats-card__h3" lang="en">Walrus</h3>
-                    <p class="formats-card__text">
-                      Площа: до 120 м2 <br />
-                      Меню: розширене меню <br />
-                      Штат: 2 продавці-касири, 2 пекарі, 2 <br />
-                      помічники пекаря, 2 офіціанти-різнороби <br />Посадкові місця: є
-                    </p>
-                  </div>
-                  <img
-                    class="formats-card__image"
-                    src="./images/formats-card1.jpg"
-                    alt="formats-card"
-                  />
-                </article>
-              </li>
-              <li class="formats-card swiper-slide">
-                <article class="formats-card__container">
-                  <div class="formats-card__text-container">
-                    <h3 class="formats-card__h3" lang="en">Horseshoe</h3>
-                    <p class="formats-card__text">
-                      Площа: до 25 м2<br />
-                      Меню: найпопулярніші позиції меню<br />
-                      Штат: 2 продавці-касири, 2 пекарі, 1<br />
-                      помічник пекаря<br />
-                      Посадкові місця: відсутні
-                    </p>
-                  </div>
-                  <img
-                    class="formats-card__image"
-                    src="./images/formats-card2.jpg"
-                    alt="formats-card"
-                  />
-                </article>
-              </li>
-              <li class="formats-card swiper-slide">
-                <article class="formats-card__container">
-                  <div class="formats-card__text-container">
-                    <h3 class="formats-card__h3" lang="en">Handlebar</h3>
-                    <p class="formats-card__text">
-                      Площа: до 15 м2<br />
-                      Меню: найпопулярніші позиції меню<br />
-                      Штат: 1 продавець, 1 пекар, 1 помічник<br />
-                      пекаря<br />
-                      Посадкові місця: відсутні
-                    </p>
-                  </div>
-                  <img
-                    class="formats-card__image"
-                    src="./images/formats-card3.jpg"
-                    alt="formats-card"
-                  />
-                </article>
-              </li>
-            </ul>
+            <div class="formats__card-container swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Walrus</h3>
+                      <p class="formats-card__text">
+                        Площа: до 120 м2 <br />
+                        Меню: розширене меню <br />
+                        Штат: 2 продавці-касири, 2 пекарі, 2 <br />
+                        помічники пекаря, 2 офіціанти-різнороби <br />Посадкові місця: є
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card1.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Horseshoe</h3>
+                      <p class="formats-card__text">
+                        Площа: до 25 м2<br />
+                        Меню: найпопулярніші позиції меню<br />
+                        Штат: 2 продавці-касири, 2 пекарі, 1<br />
+                        помічник пекаря<br />
+                        Посадкові місця: відсутні
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card2.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Handlebar</h3>
+                      <p class="formats-card__text">
+                        Площа: до 15 м2<br />
+                        Меню: найпопулярніші позиції меню<br />
+                        Штат: 1 продавець, 1 пекар, 1 помічник<br />
+                        пекаря<br />
+                        Посадкові місця: відсутні
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card3.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Walrus</h3>
+                      <p class="formats-card__text">
+                        Площа: до 120 м2 <br />
+                        Меню: розширене меню <br />
+                        Штат: 2 продавці-касири, 2 пекарі, 2 <br />
+                        помічники пекаря, 2 офіціанти-різнороби <br />Посадкові місця: є
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card1.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Horseshoe</h3>
+                      <p class="formats-card__text">
+                        Площа: до 25 м2<br />
+                        Меню: найпопулярніші позиції меню<br />
+                        Штат: 2 продавці-касири, 2 пекарі, 1<br />
+                        помічник пекаря<br />
+                        Посадкові місця: відсутні
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card2.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+                <li class="formats-card swiper-slide">
+                  <article class="formats-card__container">
+                    <div class="formats-card__text-container">
+                      <h3 class="formats-card__h3" lang="en">Handlebar</h3>
+                      <p class="formats-card__text">
+                        Площа: до 15 м2<br />
+                        Меню: найпопулярніші позиції меню<br />
+                        Штат: 1 продавець, 1 пекар, 1 помічник<br />
+                        пекаря<br />
+                        Посадкові місця: відсутні
+                      </p>
+                    </div>
+                    <img
+                      class="formats-card__image"
+                      src="./images/formats-card3.jpg"
+                      alt="formats-card"
+                    />
+                  </article>
+                </li>
+              </ul>
+            </div>
             <button class="button-arrow carousel-button next" type="button">
               <svg width="16px" height="16px">
                 <use href="./images/sprite.svg#icon-Arrow"></use>
@@ -297,7 +357,66 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__close-btn modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="../images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__h2">Замовити дзвінок</h2>
+        <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name"> Імʼя </label>
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Імʼя"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel"> Телефон </label>
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
+              Електронна пошта
+            </label>
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+
+          <button class="modal__button button-modal" type="submit">Замовити дзвінок</button>
+          <p class="terms-text">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="terms-text" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

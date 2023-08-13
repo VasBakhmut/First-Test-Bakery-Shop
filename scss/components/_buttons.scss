@@ -22,7 +22,8 @@
   justify-content: center;
   align-items: center;
   height: 44px;
-  width: 44px;
+  width: 100%;
+  max-width: 44px;
   fill: var(--main-dark-color);
   margin: 0;
   border-radius: 50%;
@@ -42,6 +43,27 @@
 }
 
 .button-contact {
+  color: var(--main-light-color);
+  background-color: var(--brend-light-color);
+  border: 2px solid var(--brend-light-color);
+  line-height: 1.5;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    color: var(--brend-dark-color);
+    border: 2px solid var(--brend-light-color);
+    background-color: transparent;
+  }
+}
+
+.button-modal {
   color: var(--main-light-color);
   background-color: var(--brend-light-color);
   border: 2px solid var(--brend-light-color);
